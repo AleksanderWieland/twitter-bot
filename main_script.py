@@ -25,7 +25,7 @@ def main():
     response = check_fixtures()
     # Check if Arsenal (ID 42) is playing today
     #team_id = 42  # Arsenal's ID
-    team_id = 49  # Chelsea's ID
+    team_id = 499  # Chelsea's ID
 
     match_data = get_match_data_by_team_id(response, team_id)
     if match_data is not None:

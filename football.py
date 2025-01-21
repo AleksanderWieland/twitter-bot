@@ -83,7 +83,7 @@ def send_tweet_with_new_events(fixture_id, file_path="events_log.json"):
             print(f'New events detected at {datetime.now()}: {len(new_events)} new events')
             for event in new_events:
                 tweet_text = format_event_tweet(event)
-                print(tweet_text)
+                #print(tweet_text) error when this line used return codecs.charmap_encode(input,self.errors,encoding_table)[0]
                 send_tweet(tweet_text)
             # Save current events to file to monitor further changes
             save_current_events(file_path, current_events)
